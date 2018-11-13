@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Photo Tracker App</string>
+    <string name="title_activity_maps">Photo Tracker</string>
+
+    <string name="permission_message">For the app to work correctly, need to get a permissions.</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="marker_snippet">Click for see Detail</string>
+
+    <string name="tracker_map">Tracker Map</string>
+    <string name="detail">Detail</string>
+
+</resources>
