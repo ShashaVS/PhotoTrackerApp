@@ -3,7 +3,6 @@ package com.shashavs.simpletracker.main.viewmodel
 import android.app.Application
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
-import com.shashavs.simpletracker.camera.AppCamera
 import com.shashavs.simpletracker.firebase.AppFirebaseStorage
 import com.shashavs.simpletracker.firebase.AppRealtimeReference
 import com.shashavs.simpletracker.location.TrackerLocation
@@ -15,7 +14,6 @@ class AppViewModelFactory @Inject constructor(val application: Application,
                                               val trackerLocation: TrackerLocation,
                                               val realtimeDatabase: AppRealtimeReference,
                                               val firebaseStorage: AppFirebaseStorage
-//                                              val appCamera: AppCamera
 ): ViewModelProvider.Factory  {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T =
@@ -25,6 +23,5 @@ class AppViewModelFactory @Inject constructor(val application: Application,
             trackerLocation,
             realtimeDatabase,
             firebaseStorage
-//            appCamera
         ) as T
 }
